@@ -32,7 +32,10 @@ static char TAG_ACTIVITY_INDICATOR;
 - (void)addActivityIndicatorWithStyle:(UIActivityIndicatorViewStyle)activityStyle {
     
     if (!self.activityIndicator) {
-        self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:activityStyle];
+        
+        self.activityIndicator = [[DGActivityIndicatorView alloc] initWithType:DGActivityIndicatorAnimationTypeTriplePulse tintColor:[UIColor whiteColor] size:50.0f];
+//        _activityIndicator.frame = frame;
+//        self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:activityStyle];
         
         self.activityIndicator.autoresizingMask = UIViewAutoresizingNone;
         

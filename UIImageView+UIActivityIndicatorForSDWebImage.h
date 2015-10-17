@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "UIImageView+WebCache.h"
 #import "SDImageCache.h"
+#import "DGActivityIndicatorView.h"
 
 @interface UIImageView (UIActivityIndicatorForSDWebImage)
 
-@property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, strong) DGActivityIndicatorView *activityIndicator;
 
 - (void)setImageWithURL:(NSURL *)url usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle;
 - (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle;
